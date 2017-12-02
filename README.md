@@ -1,5 +1,12 @@
 # tsne-grid
-This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualization of a collection of images in a square grid.
+This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualization of multiple images in a square grid.
+
+<!-- ![alt text](./examples/outputs/output5x5.jpg =250x250) -->
+<p align="center">
+<img src="./examples/outputs/output5x5.jpg" width="300" height="300" />
+<img src="./examples/outputs/output8x8.jpg" width="300" height="300" />
+
+</p>
 
 ### Setup
 Dependencies:
