@@ -13,13 +13,13 @@ Basic usage:
 python tsne_grid.py --dir ./examples/inputs/ --size 4
 ```
 #### Options (required)
-*`--dir`: Input images directory containing image collection.
-*`--size`: Number of small images in a row/column in output image.
+* `--dir`: Input images directory containing image collection.
+* `--size`: Number of small images in a row/column in output image.
 
 #### Options (optional)
-*`--res`: Width/height if small images (in pixels). Default is 224.
-*`--name`: Output filename. Default is tsne_grid.jpg
-*`--path`: Output image path. Default is current directory.
-*`--per`: Perplexity for tsne algorithm. Default is 50.
-*`--iter`: Number of iterations for tsne algorithm. Default is 5000.
+* `--res`: Width/height if small images (in pixels). Default is 224.
+* `--name`: Output filename. Default is tsne_grid.jpg
+* `--path`: Output image path. Default is current directory.
+* `--per`: Perplexity for tsne algorithm. Default is 50.
+* `--iter`: Number of iterations for tsne algorithm. Default is 5000.
 
