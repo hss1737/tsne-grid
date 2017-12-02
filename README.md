@@ -9,5 +9,6 @@ Dependencies:
 ### Usage
 
 Basic usage:
-'python tsne_grid.py -d <./examples/inputs> -s <4>'
-
+```bash
+python tsne_grid.py -d <./examples/inputs> -s <4>
+```
