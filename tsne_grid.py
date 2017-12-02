@@ -18,7 +18,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--size', type=int, help="number of small images in a row/column in output image")
 parser.add_argument('-d', '--dir', type=str, help="source directory for images")
 parser.add_argument('-r', '--res', type=int, default=224, help="width/height of output square image")
-parser.add_argument('-n', '--name', type=str, default='tsne_grid.png', help='name of output image file')
+parser.add_argument('-n', '--name', type=str, default='tsne_grid.jpg', help='name of output image file')
 parser.add_argument('-p', '--path', type=str, default='./', help="destination directory for output image")
 parser.add_argument('-x', '--per', type=int, default=50, help="tsne perplexity")
 parser.add_argument('-i', '--iter', type=int, default=5000, help="number of iterations in tsne algorithm")
@@ -89,7 +89,9 @@ def save_tsne_grid(img_collection, X_2d, out_res, out_dim):
     out = np.ones((out_dim*out_res, out_dim*out_res, 3))
 
     for pos, img in zip(grid_jv, img_collection[0:to_plot]):
-        out[int(np.floor(pos[0]* (out_dim - 1) * out_res)):int(np.floor(pos[0]* (out_dim - 1) * out_res)) + out_res, int(np.floor(pos[1]* (out_dim - 1) * out_res)):int(np.floor(pos[1]* (out_dim - 1) * out_res+out_res))] = image.img_to_array(img)
+        h_range = int(np.floor(pos[0]* (out_dim - 1) * out_res))
+        w_range = int(np.floor(pos[1]* (out_dim - 1) * out_res))
+        out[h_range:h_range + out_res, w_range:w_range + out_res]  = image.img_to_array(img)
 
     im = image.array_to_img(out)
     im.save(out_dir + out_name, quality=100)
