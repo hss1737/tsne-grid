@@ -6,9 +6,8 @@ Dependencies:
 * [tensorflow](https://www.tensorflow.org/install/)
 * [keras](https://keras.io/)
 
-###Usage
+### Usage
 
 Basic usage:
-'''sh
-python tsne_grid.py -d <./examples/inputs> -s <4>
-'''
+'python tsne_grid.py -d <./examples/inputs> -s <4>'
+
