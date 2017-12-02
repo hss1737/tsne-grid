@@ -7,7 +7,8 @@ Dependencies:
 * [keras](https://keras.io/)
 
 ###Usage
+
 Basic usage:
-'''bash
+'''sh
 python tsne_grid.py -d <./examples/inputs> -s <4>
 '''
