@@ -45,7 +45,7 @@ else:
     raise argparse.ArgumentTypeError("'{}' not a valid directory.".format(out_dir))
 
 def build_model():
-    base_model = VGG16(weights='imagenet', include_top=True)
+    base_model = VGG16(weights='imagenet', include_top=False)
     top_model = Sequential()
     top_model.add(Flatten(input_shape=base_model.output_shape[1:]))
     return Model(inputs=base_model.input, outputs=top_model(base_model.output))
