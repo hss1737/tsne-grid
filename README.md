@@ -1,5 +1,5 @@
 # tsne-grid
-This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualization of multiple images in a square grid.
+This is a python script for [t-SNE](https://lvdmaaten.github.io/tsne/) visualization of multiple images in a square grid.
 <p align="center">
 <img src="./examples/tsne_parichayawalia.jpg" width="290" height="290" />
 <img src="./examples/tsne_prabodh.jpg" width="290" height="290" />
@@ -24,11 +24,11 @@ python tsne_grid.py --dir ./examples/inputs/ --size 4
 * `--res`: Width/height if small images (in pixels). Default is 224.
 * `--name`: Output filename. Default is tsne_grid.jpg
 * `--path`: Output image path. Default is current directory.
-* `--per`: Perplexity for tsne algorithm. Default is 50.
-* `--iter`: Number of iterations for tsne algorithm. Default is 5000.
+* `--per`: Perplexity for t-SNE algorithm. Default is 50.
+* `--iter`: Number of iterations for t-SNE algorithm. Default is 5000.
 
 ### Implementation details
-VGG16 (without fc layers on top) is used to generate high dimensional feature representations of images. 2D representaions of these features are formed using scikit-learn's tsne implementation. These 2D representations are converted into a square grid using [Jonker-Volgenant](https://blog.sourced.tech/post/lapjv/) algorithm.
+VGG16 (without fc layers on top) is used to generate high dimensional feature representations of images. 2D representaions of these features are formed using scikit-learn's t-SNE implementation. These 2D representations are converted into a square grid using [Jonker-Volgenant](https://blog.sourced.tech/post/lapjv/) algorithm.
 
 ### Support
 The script was tested with tensorflow (1.4.0) and keras (2.1.1) on Nvidia GeForce GT 740M
