@@ -100,7 +100,9 @@ def main():
     model = build_model()
     img_collection = load_img(in_dir)
     activations = get_activations(model, img_collection)
+    print("Generating 2D representation.")
     X_2d = generate_tsne(activations)
+    print("Generating image grid.")
     save_tsne_grid(img_collection, X_2d, out_res, out_dim)
 
 if __name__ == '__main__':
