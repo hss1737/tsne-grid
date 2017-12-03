@@ -1,7 +1,5 @@
 # tsne-grid
 This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualization of multiple images in a square grid.
-
-<!-- ![alt text](./examples/outputs/output5x5.jpg =250x250) -->
 <p align="center">
 <img src="./examples/outputs/output_1.jpg" width="270" height="270" />
 <img src="./examples/outputs/output_2.jpg" width="270" height="270" />
@@ -14,7 +12,6 @@ Dependencies:
 * [keras](https://keras.io/)
 
 ### Usage
-
 Basic usage:
 ```bash
 python tsne_grid.py --dir ./examples/inputs/ --size 4
