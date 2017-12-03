@@ -6,7 +6,6 @@ This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualizat
 <img src="./examples/outputs/output_1.jpg" width="270" height="270" />
 <img src="./examples/outputs/output_2.jpg" width="270" height="270" />
 <img src="./examples/outputs/output_3.jpg" width="270" height="270" />
-
 </p>
 
 ### Setup
