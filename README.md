@@ -3,7 +3,7 @@ This is a python script for [tsne](https://lvdmaaten.github.io/tsne/) visualizat
 <p align="center">
 <img src="./examples/tsne_parichayawalia.jpg" width="290" height="290" />
 <img src="./examples/tsne_prabodh.jpg" width="290" height="290" />
-<img src="./examples/tsne_random.jpg" width="290" height="290" />
+<img src="./examples/tsne_rand.jpg" width="290" height="290" />
 </p>
 
 ### Setup
@@ -29,6 +29,9 @@ python tsne_grid.py --dir ./examples/inputs/ --size 4
 
 ### Implementation details
 VGG16 (without fc layers on top) is used to generate high dimensional feature representations of images. 2D representaions of these features are formed using scikit-learn's tsne implementation. These 2D representations are converted into a square grid using [Jonker-Volgenant](https://blog.sourced.tech/post/lapjv/) algorithm.
+
+### Support
+The script was tested with tensorflow (1.4.0) and keras (2.1.1) on Nvidia GeForce GT 740M
 
 ### References
 * L.J.P. van der Maaten and G.E. Hinton. Visualizing High-Dimensional Data Using t-SNE. Journal of Machine Learning Research 9(Nov):2579-2605, 2008. [PDF](https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf) [[Supplemental material]](https://lvdmaaten.github.io/publications/misc/Supplement_JMLR_2008.pdf) [[Talk]](https://www.youtube.com/watch?v=RJVL80Gg3lA&list=UUtXKDgv1AVoG88PLl8nGXmw) [[Code]](https://lvdmaaten.github.io/tsne/)
